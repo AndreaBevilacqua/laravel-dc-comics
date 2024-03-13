@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('tilte', 100)->unique();
             $table->text('description')->nullable();
-            $table->text('thumb')->unique();
+            $table->string('thumb',200);
             $table->float('price', 10, 2);
             $table->string('series', 40);
             $table->date('sale_date');
