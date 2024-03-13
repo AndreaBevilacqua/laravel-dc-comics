@@ -1,0 +1,31 @@
+header {
+    background-color: white;
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        gap: 30px;
+
+        li {
+            padding: 50px 0;
+
+            a {
+                text-transform: uppercase;
+                font-weight: bold;
+                color: black;
+                padding-bottom: 2.7rem;
+
+                &.active,
+                &:hover {
+                    border-bottom: 6px solid #0282F9;
+                    color: #0282F9;
+                }
+            }
+        }
+    }
+}
