@@ -5,7 +5,7 @@
             <ul>
                 <li><a href="{{route('home')}}" class="{{Route::is('Home') ? 'active' : ''}}">Home</a></li>
                 <li><a href="{{url('/')}}">Characters</a></li>
-                <li><a href="{{route('comics')}}">Comics</a></li>
+                <li><a href="{{route('comics.index')}}">Comics</a></li>
                 <li><a href="{{url('/')}}">TV</a></li>
                 <li><a href="{{url('/')}}">Movies</a></li>
                 <li><a href="{{url('/')}}">Games</a></li>

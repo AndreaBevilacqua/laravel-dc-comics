@@ -3,7 +3,9 @@
 @section('title','Home')
 
 @section('core-content')
-    @include('includes.main')
+<section id="jumbotron">
+</section>
+{{-- @include('comics.index') --}}
 @endsection
     
 
