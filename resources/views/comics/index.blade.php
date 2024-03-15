@@ -3,13 +3,14 @@
 @section('title', 'Comics')
 
 @section('core-content')
+<section id="jumbotron"></section>
 <div class="top-main">
     <div class="container card-container">
         @foreach ($comics as $comic) 
         <div class="comic-card">
          <a href="{{ route('comics.show', $comic->id )}}">
              <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
-             <h6>{{ $comic->tilte }}</h6>
+             <h6>{{ $comic->title }}</h6>
          </a>
         </div>
         @endforeach

@@ -7,6 +7,7 @@
 @endsection
 
 @section('core-content')
+    <section id="jumbotron"></section>
     <div class="blue-bar">
         <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
     </div>
