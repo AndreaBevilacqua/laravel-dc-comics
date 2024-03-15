@@ -7,27 +7,26 @@
 @endsection
 
 @section('core-content')
-    <section id="jumbotron"></section>
     <div class="blue-bar">
-        <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+        <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
     </div>
     <div class="container" id="single-card">
         <div class="details">
-            <h1>{{$comic['title']}}</h1>
+            <h1>{{ $comic->title }}</h1>
             <div class="green-bar">
                 <div class="price">
-                    <span>U.S. Price: {{$comic['price']}}</span>
+                    <span>U.S. Price: {{ $comic->price }}</span>
                     <p>AVAILABLE</p>
                 </div>
                 <div class="checking">
                     Check Availability <i class="fa-solid fa-caret-down"></i>
                 </div>
             </div>
-            <p class="text">{{$comic['description']}}</p>
+            <p class="text">{{ $comic->description }}</p>
         </div>
         <div class="advertisment">
             <h2>ADVERTISMENT</h2>
-            <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="">
+            <img src="{{ Vite::asset('resources/img/adv.jpg') }}" alt="{{ $comic->title }}">
         </div>
     </div>
 @endsection
