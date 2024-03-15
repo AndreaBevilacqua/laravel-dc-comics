@@ -4,7 +4,7 @@
 
 @section('core-content')
 <section id="jumbotron"></section>
-@include('comics.index')
+{{-- @include('comics.index') --}}
 @endsection
     
 

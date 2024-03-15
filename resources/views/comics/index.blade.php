@@ -8,7 +8,7 @@
         @foreach ($comics as $comic) 
         <div class="comic-card">
          <a href="{{ route('comics.show', $comic->id )}}">
-             <img src="{{ $comic->thumb }}" alt="{{$comic->title}}">
+             <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
              <h6>{{ $comic->tilte }}</h6>
          </a>
         </div>

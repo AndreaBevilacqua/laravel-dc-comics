@@ -4,9 +4,9 @@
 @use 'reset';
 @use 'utils';
 @use 'header';
-@use 'index';
+@use 'comics/index';
+@use 'comics/show';
 @use 'bottomfooter';
 @use 'topfooter';
 @use 'fonts';
-@use 'comics/show';
 @use 'vars' as *;
