@@ -21,5 +21,8 @@ Route::get('/', function () {
 // Rotta Lista 
 Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
 
+// Rotta per creazione
+Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
+
 // Rotta dettaglio 
 Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
