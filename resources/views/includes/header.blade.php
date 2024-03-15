@@ -3,7 +3,7 @@
         <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc-logo">
         <div id="navbar">
             <ul>
-                <li><a href="{{route('home')}}" class="{{Route::is('Home') ? 'active' : ''}}">Home</a></li>
+                <li><a href="{{route('home')}}">Home</a></li>
                 <li><a href="{{url('/')}}">Characters</a></li>
                 <li><a href="{{route('comics.index')}}">Comics</a></li>
                 <li><a href="{{url('/')}}">TV</a></li>
