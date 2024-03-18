@@ -24,3 +24,4 @@ Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.sh
 Route::get('/comics/{comic}/edit', [ComicController::class, 'edit'])->name('comics.edit');// Rotta per modificare un comic
 Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');// Rotta per il salvataggio
 Route::put('/comics/{comic}', [ComicController::class, 'update'])->name('comics.update'); // Rotta per salvare le modifiche
+Route::delete('/comics/{comic}', [ComicController::class, 'destroy'])->name('comics.destroy'); // Rotta per eliminare
