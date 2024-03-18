@@ -27,6 +27,11 @@
             <p class="text">{{ $comic->description }}</p>
             <div class="d-flex gap-2">
                 <a href="{{ url("/comics/$comic->id/edit") }}" class="btn btn-warning my-3">Modifica</a>
+                <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                    @method('DELETE')
+                    @csrf
+                    <button class="btn btn-danger my-3">Elimina</button>
+                </form>
                 <a href="{{ route('comics.index') }}" class="btn btn-secondary my-3">Indietro</a>
             </div>
 

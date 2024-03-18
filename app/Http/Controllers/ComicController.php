@@ -50,4 +50,11 @@ class ComicController extends Controller
 
         return to_route('comics.show', $comic->id);
     }
+
+    public function destroy(Comic $comic)
+    {
+        $comic->comic();
+
+        return to_route('comics.index');
+    }
 }
