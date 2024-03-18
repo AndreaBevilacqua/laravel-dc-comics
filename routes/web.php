@@ -26,3 +26,6 @@ Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.c
 
 // Rotta dettaglio 
 Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
+
+// Rotta per il salvataggio
+Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
