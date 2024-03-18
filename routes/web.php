@@ -18,14 +18,8 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-// Rotta Lista 
-Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');
-
-// Rotta per creazione
-Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');
-
-// Rotta dettaglio 
-Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');
-
-// Rotta per il salvataggio
-Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');
+Route::get('/comics', [ComicController::class, 'index'])->name('comics.index');// Rotta Lista 
+Route::get('/comics/create', [ComicController::class, 'create'])->name('comics.create');// Rotta per creazione
+Route::get('/comics/{comic}', [ComicController::class, 'show'])->name('comics.show');// Rotta dettaglio 
+Route::get('/comics/{comic}/edit', [ComicController::class, 'edit'])->name('comics.edit');// Rotta per modificare un comic
+Route::post('/comics', [ComicController::class, 'store'])->name('comics.store');// Rotta per il salvataggio
