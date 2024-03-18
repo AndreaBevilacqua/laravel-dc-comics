@@ -11,7 +11,10 @@
     <div class="container">
         <h1>Crea Nuovo Comic</h1>
         <div class="creation-form card-body">
-            <form action="" method="POST">
+            <form action="{{ route('comics.store') }}" method="POST">
+                {{-- <input type="hidden" name="csrf_token" value="{{ get_csrf( )}}"> --}}
+                @csrf 
+
                 <div class="row">
                     <div class="col-6">
                         <div class="mb-3">
