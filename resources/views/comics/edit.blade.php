@@ -12,7 +12,7 @@
     <div class="container">
         <h1>Modicia Comic</h1>
         <div class="creation-form card-body">
-            <form action="{{ route('comics.update'), $comic->id }}" method="POST" novalidate>
+            <form action="{{ route('comics.update', $comic->id) }}" method="POST">
                 {{-- <input type="hidden" name="csrf_token" value="{{ get_csrf( )}}"> --}}
                 {{-- <input type="hidden" name="_method" value="PUT"> --}}
                 @csrf 

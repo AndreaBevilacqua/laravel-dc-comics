@@ -45,7 +45,9 @@ class ComicController extends Controller
         $data = $request->all();
 
         $comic->update($data);
+        // $comic->fill($data);
+        // $comic->save();
 
-        return to_route('comics.show', $comic);
+        return to_route('comics.show', $comic->id);
     }
 }
