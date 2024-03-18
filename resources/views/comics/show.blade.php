@@ -25,7 +25,11 @@
                 </div>
             </div>
             <p class="text">{{ $comic->description }}</p>
-            <a href="{{ url("/comics/$comic->id/edit") }}" class="btn btn-warning my-4">Modifica</a>
+            <div class="d-flex gap-2">
+                <a href="{{ url("/comics/$comic->id/edit") }}" class="btn btn-warning my-3">Modifica</a>
+                <a href="{{ route('comics.index') }}" class="btn btn-secondary my-3">Indietro</a>
+            </div>
+
         </div>
         <div class="advertisment">
             <h2>ADVERTISMENT</h2>
